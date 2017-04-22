@@ -1,0 +1,20 @@
+body {
+  width: 500px;
+}
+
+body,
+table {
+  margin: 0 auto;
+}
+
+
+.tbl_hlt {
+  font-weight: bold;
+  text-align: center;
+}
+.tbl_external {
+  width: 300px;
+  border: solid 1px #000;
+}
+
+

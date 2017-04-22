@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>This is the Title of the page</title>
-</head>
+<title>Inline, internal/embeded and external CSS | Session 3 Assignment 3.1</title>
+<link rel='stylesheet' href='style.css'/>
+<style>
 
+.tbl_head {
+  font-weight: bold;
+  text-align: center;
+}
+
+.tbl_internal {
+  width: 250px;
+  border: solid 1px #000;
+}
+
+td {
+ border: solid 1px #000;
+}
+
+</style>
+</head>
 <body>
-<h1>This is body of the page</h1>
-<p> Anything within the body of a web page is displayed in the main browser window</p>
+
+<!-- Inline styles -->
+<h1 style= 'text-transform: uppercase;text-align:center;'> 2008 Officers </h1>
+
+<table style='width: 400px;border: solid 1px #000;'> 
+<tr><td colspan='3' style= 'font-weight: bold; text-align:center;'> Current Officers</td></tr>
+<tr><td>President</td><td> Jesse Blair</td><td>555-7189</td></tr>
+<tr><td>Vice-President</td><td> Franch smythe</td><td> 500-555-3576</td></tr>
+<tr><td>Secretary</td><td> jean Darr</td><td>555-5415</td></tr>
+<tr><td>Treasurer</td><td> Linda Carter</td><td>555-9653</td><tr>
+</table>
+<br/>
+
+<!-- Internal styles-->
+<table class='tbl_internal'>
+<tr><td colspan='2' class='tbl_head'> Board Members at Large</td></tr>
+<tr><td>Dick Wilson</td><td>555-1982</td></tr>
+<tr><td>Jan Davis</td><td>555-3530</td></tr>
+</table>
+<br/>
+
+<!-- External styles-->
+<table class='tbl_external'>
+<tr><td colspan='2' class='tbl_hlt'>Calling Committee</td></tr>
+<tr><td class='tbl_hlt'>Chairman: Harry Bean</td><td class='tbl_hlt'>555-7388</td></tr>
+<tr><td>Hoot Gibson</td><td>555-2952</td></tr>
+<tr><td>Sam Akard</td><td>555-7897</td></tr>
+<tr><td>Joe Carter</td><td>555- 9653</td></tr>
+<tr><td>Betty Alexander</td><td>555-5287</td></tr>
+<tr><td>Jerry Bear</td><td>555-9612</td></tr>
+<tr><td>Linda Carter</td><td>555-9653</td></tr>
+<tr><td>Joe Vaughn</td><td>555-7815</td></tr>
+</table>
 
 </body>
 </html>
